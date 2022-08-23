@@ -1,4 +1,3 @@
-/* Show hidden menu */
 const navMenu = document.getElementById('nav-menu')
 const navToggle = document.getElementById('nav-toggle')
 const navClose = document.getElementById('nav-close')
@@ -15,17 +14,14 @@ if (navClose){
     })
 }
 
-/* Close menu every time an icon is clicked */
 const navLink = document.querySelectorAll('.nav__link')
 
 function linkAction(){
     const navMenu = document.getElementById('nav-menu')
-    // When we click on each nav__link, we remove the show-menu class
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/* Get skills tab, setup the close and open function*/
 const skillsContent = document.getElementsByClassName('skills__content'),
 skillsHeader = document.querySelectorAll('.skills__header')
 
@@ -43,8 +39,6 @@ skillsHeader.forEach((el)=>{
     el.addEventListener('click', toggleSkills)
 })
 
-
-/* List of projects and put them in swiper*/
 const tabs = document.querySelectorAll('[data-target]'),
 tabContents = document.querySelectorAll('[data-content]')
 
@@ -78,7 +72,6 @@ let swiper = new Swiper(".project__container", {
     },
 })
 
-/* Scrolling page */ 
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
@@ -98,7 +91,6 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
-/* Background header */
 function scrollHeader(){
     const nav = document.getElementById('header')
     // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
@@ -106,7 +98,6 @@ function scrollHeader(){
 }
 window.addEventListener('scroll', scrollHeader)
 
-/* Show scroll up */
 function scrollUp(){
     const scrollUp = document.getElementById('scroll-up');
     // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class

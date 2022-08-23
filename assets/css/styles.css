@@ -432,7 +432,7 @@ img{
     width: 60%;
 }
 
-.skills__cpp{
+.skills__cs{
     width: 50%;
 }
 .skills__kotlin{
@@ -448,10 +448,10 @@ img{
 .skills__nodejs{
     width: 60%;
 }
-.skills__flutter{
+.skills__dotnet{
     width: 60%;
 }
-.skills__nextjs{
+.skills__flask{
     width: 60%;
 }
 .skills__rails{
