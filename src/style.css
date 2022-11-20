@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a:hover,
+  a:active {
+    @apply underline;
+  }
+
+  svg {
+    @apply inline-block;
+  }
+}
+
+@layer components {
+  .anchor-target {
+    @apply scroll-mt-[87px] sm:scroll-mt-[97px] md:scroll-mt-[107px] lg:scroll-mt-[157px] xl:scroll-mt-[167px] 2xl:scroll-mt-[177px];
+  }
+
+  .link-hover {
+    @apply transition hover:text-link-hover-color active:text-link-hover-color;
+  }
+
+  .main-titles {
+    @apply mb-[30px] text-center text-3xl sm:mb-[35px] md:mb-[40px] lg:mb-[45px] lg:text-4xl xl:mb-[50px];
+  }
+
+  .skill-card {
+    @apply flex h-[60px] w-[150px] items-center justify-center rounded-full border-[3px] border-solid border-card-border-color bg-card-bg-color sm:h-[65px] sm:w-[155px] md:h-[70px] md:w-[160px] lg:h-[75px] lg:w-[165px] xl:h-[80px] xl:w-[170px];
+  }
+
+  .project-card {
+    @apply relative flex w-full flex-col gap-[15px] rounded-xl border-l-8 border-r-8 border-solid bg-card-bg-color p-[30px] lg:h-[275px] lg:w-[calc(50%-15px)] xl:h-56;
+  }
+
+  .project-card-title-link {
+    @apply font-bold lg:text-lg;
+  }
+
+  .project-card-detail {
+    @apply relative ml-5 before:absolute before:top-1/2 before:-left-5 before:h-[10px] before:w-[10px] before:-translate-y-1/2 before:rounded-full before:bg-white lg:absolute lg:bottom-[30px];
+  }
+
+  .tool-card {
+    @apply flex w-[215px] flex-shrink-0 flex-col gap-[15px] rounded-[30px] border-[3px] border-solid border-card-border-color bg-card-bg-color p-[15px];
+  }
+
+  .tool-card-title {
+    @apply flex h-[35px] w-full items-center justify-center text-center text-lg;
+  }
+
+  .tool-card-links {
+    @apply flex h-[250px] w-full snap-y flex-col gap-[15px] overflow-y-auto border-t border-solid border-[rgba(255,255,255,0.5)] pt-[15px] text-center;
+  }
+}
+
+@layer utilities {
+  .container-padding-header {
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
+
+  .container-padding-2xl {
+    padding: 100px;
+  }
+
+  .container-padding-xl {
+    padding: 90px 75px;
+  }
+
+  .container-padding-lg {
+    padding: 80px 60px;
+  }
+
+  .container-padding-md {
+    padding: 70px 45px;
+  }
+
+  .container-padding-sm {
+    padding: 60px 30px;
+  }
+
+  .container-padding {
+    padding: 50px 15px;
+  }
+
+  .socials-icon-md {
+    width: 24px;
+    height: 24px;
+  }
+
+  .socials-icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .header-informations-icon-md {
+    margin-bottom: 3px;
+
+    width: 18px;
+    height: 18px;
+  }
+
+  .header-informations-icon {
+    margin-bottom: 3px;
+
+    width: 16px;
+    height: 16px;
+  }
+
+  .main-skills-icon-md {
+    margin-right: 5px;
+
+    width: 24px;
+    height: 24px;
+  }
+
+  .main-skills-icon {
+    margin-right: 5px;
+
+    width: 22px;
+    height: 22px;
+  }
+
+  .main-projects-icon-md {
+    margin-bottom: 3px;
+    margin-left: 3px;
+
+    width: 20px;
+    height: 20px;
+  }
+
+  .main-projects-icon {
+    margin-bottom: 3px;
+    margin-left: 3px;
+
+    width: 18px;
+    height: 18px;
+  }
+
+  .no-scrollbar {
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
